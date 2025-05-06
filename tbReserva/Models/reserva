@@ -1,0 +1,67 @@
+using System;
+namespace TRABALHO2.Models
+{
+    public class Reserva
+    {
+        public DateTime DataReserva { get; private set; }
+        public TimeSpan HoraReserva { get; private set; }
+        public string DescricaoSala { get; private set; }
+        public int Capacidade { get; private set; }
+
+
+        public Reserva(DateTime dataReserva, TimeSpan horaReserva, string descricaoSala, int capacidade)
+        {
+            DataReserva = dataReserva;
+            HoraReserva = horaReserva;
+            DescricaoSala = descricaoSala;
+
+
+            if (capacidade <= 0 || capacidade >= 40)
+                throw new ArgumentException("A capacidade deve ser maior que 0 e menor que 40 alunos.");
+
+
+            Capacidade = capacidade;
+        }
+
+
+        public bool ValidarReserva(ConfiguracaoReserva config)
+        {
+            if (DataReserva < config.DataMinima || DataReserva > config.DataMaxima)
+            {
+                Console.WriteLine("Erro: A data da reserva está fora do intervalo permitido.");
+                return false;
+            }
+
+
+            if (HoraReserva < config.HoraMinima || HoraReserva > config.HoraMaxima)
+            {
+                Console.WriteLine("Erro: A hora da reserva está fora do intervalo permitido.");
+                return false;
+            }
+
+
+            if (Capacidade <= 0 || Capacidade >= 40)
+            {
+                Console.WriteLine("Erro: A capacidade deve ser entre 1 e 39 alunos.");
+                return false;
+            }
+
+
+            Console.WriteLine("Reserva válida.");
+            return true;
+        }
+
+
+        public void Exibir()
+        {
+            Console.WriteLine("\n--- Dados da Reserva ---");
+            Console.WriteLine($"Sala: {DescricaoSala}");
+            Console.WriteLine($"Data: {DataReserva:dd/MM/yyyy}");
+            Console.WriteLine($"Hora: {HoraReserva:hh\\:mm}");
+            Console.WriteLine($"Capacidade: {Capacidade}");
+        }
+    }
+}
+
+
+

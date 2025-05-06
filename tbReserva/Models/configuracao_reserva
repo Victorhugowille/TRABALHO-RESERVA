@@ -1,0 +1,43 @@
+using System;
+namespace TRABALHO2.Models
+{
+    public class ConfiguracaoReserva
+    {
+        // Propriedades
+        public DateTime DataMinima { get; private set; }
+        public DateTime DataMaxima { get; private set; }
+        public TimeSpan HoraMinima { get; private set; }
+        public TimeSpan HoraMaxima { get; private set; }
+
+
+        // Construtor
+        public ConfiguracaoReserva(DateTime dataMinima, DateTime dataMaxima, TimeSpan horaMinima, TimeSpan horaMaxima)
+        {
+            // Validações
+            if (dataMinima >= dataMaxima)
+                throw new ArgumentException("A data mínima deve ser menor que a data máxima.");
+
+
+            if (horaMinima >= horaMaxima)
+                throw new ArgumentException("A hora mínima deve ser menor que a hora máxima.");
+
+
+            // Atribuindo valores
+            DataMinima = dataMinima;
+            DataMaxima = dataMaxima;
+            HoraMinima = horaMinima;
+            HoraMaxima = horaMaxima;
+        }
+
+
+        // Método para exibir a configuração de reservas
+        public void ExibirConfiguracao()
+        {
+            Console.WriteLine("=== Configuração da Reserva ===");
+            Console.WriteLine($"Data mínima: {DataMinima:dd/MM/yyyy}");
+            Console.WriteLine($"Data máxima: {DataMaxima:dd/MM/yyyy}");
+            Console.WriteLine($"Hora mínima: {HoraMinima:hh\\:mm}");
+            Console.WriteLine($"Hora máxima: {HoraMaxima:hh\\:mm}");
+        }
+    }
+}

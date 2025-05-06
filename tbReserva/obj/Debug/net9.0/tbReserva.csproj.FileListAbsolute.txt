@@ -1,0 +1,15 @@
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.AssemblyInfo.cs
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.sourcelink.json
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\bin\Debug\net9.0\tbReserva.exe
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\bin\Debug\net9.0\tbReserva.deps.json
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\bin\Debug\net9.0\tbReserva.runtimeconfig.json
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\bin\Debug\net9.0\tbReserva.dll
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\bin\Debug\net9.0\tbReserva.pdb
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.dll
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\refint\tbReserva.dll
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.pdb
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\tbReserva.genruntimeconfig.cache
+C:\Users\victo\OneDrive\Desktop\POO\repositorio\tbReserva\obj\Debug\net9.0\ref\tbReserva.dll
