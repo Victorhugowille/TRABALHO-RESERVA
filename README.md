@@ -1,3 +1,5 @@
+Nome:
+Victor Hugo Wille
 Sistema de Reserva de Salas
 
 Este é um projeto em C# que simula o registro de reservas, A aplicação é executada no console e tem como foco a prática de Programação Orientada a Objetos (POO), com ênfase em abstração, encapsulamento, validação e separação de responsabilidades.
